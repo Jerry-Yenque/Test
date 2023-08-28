@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
 
 // Other routes.
 router.get('/p', function(req, res){
-  res.sendFile('/var/opt/build/repo/index.html');
+  res.sendFile('index.html');
   // res.send(direct)
 });
 router.get('/page2', function(req, res){
