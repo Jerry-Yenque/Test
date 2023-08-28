@@ -22,7 +22,7 @@ fs.readdir(views, (err, archivos) => {
 
   console.log('Archivos en el directorio actual:');
   archivos.forEach(archivo => {
-    files += archivo + " ";
+    files += archivo;
   });
 });
 
