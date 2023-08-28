@@ -12,15 +12,15 @@ app.get('/', (req, res) => {
   res.send('Hello World!')  
 });
 
-// Route Files.
-let page1 = require('./routes/page1');
-let page2 = require('./routes/page2');
-let page3 = require('./routes/page3');
-let page4 = require('./routes/page4');
-app.use('/page1', page1);
-app.use('/page2', page2);
-app.use('/page3', page3);
-app.use('/page4', page4);
+// // Route Files.
+// let page1 = require('./routes/page1');
+// let page2 = require('./routes/page2');
+// let page3 = require('./routes/page3');
+// let page4 = require('./routes/page4');
+// app.use('/page1', page1);
+// app.use('/page2', page2);
+// app.use('/page3', page3);
+// app.use('/page4', page4);
 
 // Start Server.
 let port = 3005;
