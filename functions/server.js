@@ -8,10 +8,10 @@ const router = express.Router();
 const fs = require('fs');
 
 // Link to views folder.
-// let views = path.dirname(__dirname,);
+let views = path.dirname(__dirname);
 // views = path.dirname(__dirname,);
 let ruta = ""
-fs.readdir(__dirname, (err, archivos) => {
+fs.readdir(views, (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
     return;
