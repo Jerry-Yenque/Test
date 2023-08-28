@@ -26,10 +26,10 @@ fs.readdir(__dirname, (err, archivos) => {
   });
 });
 
-// const ruta = direct + 'files' + files
+let ruta = direct + 'files' + fi
 // Home route.
 router.get('/', (req, res) => {
-  res.send(fi)
+  res.send(ruta)
   // res.sendFile('index.html', { root: views });
 });
 
