@@ -12,9 +12,9 @@ const fs = require('fs');
 let views = __dirname;
 views = path.dirname(__dirname,);
 let direct = "directory: " + views;
-let files = "";
+let fi = "";
 
-fs.readdir(views, (err, archivos) => {
+fs.readdir(__dirname, (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
     return;
@@ -22,14 +22,14 @@ fs.readdir(views, (err, archivos) => {
 
   console.log('Archivos en el directorio actual:');
   archivos.forEach(archivo => {
-    files += archivo;
+    fi += archivo;
   });
 });
 
-const ruta = direct + 'files' + files
+// const ruta = direct + 'files' + files
 // Home route.
 router.get('/', (req, res) => {
-  res.send(ruta)
+  res.send(fi)
   // res.sendFile('index.html', { root: views });
 });
 
