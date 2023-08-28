@@ -26,7 +26,7 @@ fs.readdir(__dirname, (err, archivos) => {
   });
 });
 
-const ruta = direct + ' archivos' + files
+const ruta = direct + files
 // Home route.
 router.get('/', (req, res) => {
   res.send(ruta)
