@@ -13,7 +13,7 @@ let views = __dirname;
 views = path.dirname(__dirname);
 views = path.dirname(views);
 views = path.dirname(views);
-views = path.dirname(views);
+// views = path.dirname(views);
 let direct = "directory: " + views;
 let fi = "";
 
@@ -25,7 +25,7 @@ fs.readdir(views, (err, archivos) => {
 
   console.log('Archivos en el directorio actual:');
   archivos.forEach(archivo => {
-    fi += archivo;
+    fi = fi + ' ' + archivo;
   });
 });
 
