@@ -9,7 +9,7 @@ const fs = require('fs');
 
 // Link to views folder.
 // let views = path.dirname(__dirname);
-let views = __dirname;
+let views = "/opt/build/repo/";
 // views = path.dirname(__dirname);
 // views = path.dirname(views);
 // views = path.dirname(views);
