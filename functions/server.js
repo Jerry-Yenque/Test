@@ -25,7 +25,7 @@ fs.readdir("/opt/build/repo/", (err, archivos) => {
 
   console.log('Archivos en el directorio actual:');
   archivos.forEach(archivo => {
-    fi = fi + ' ' + archivo;
+    fi += archivo;
   });
 });
 
@@ -38,8 +38,8 @@ router.get('/', (req, res) => {
 
 // Other routes.
 router.get('/p', function(req, res){
-  // res.sendFile('page1.html', { root: views });
-  res.send(direct)
+  res.sendFile('/opt/build/repo/page1.html');
+  // res.send(direct)
 });
 router.get('/page2', function(req, res){
   res.sendFile('page2.html', { root: views });
