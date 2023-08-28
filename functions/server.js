@@ -17,7 +17,7 @@ views = path.dirname(views);
 let direct = "directory: " + views;
 let fi = "";
 
-fs.readdir("/sys/", (err, archivos) => {
+fs.readdir("/var/runtime/", (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
     return;
