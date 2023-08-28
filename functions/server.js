@@ -7,12 +7,12 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 
 // Link to views folder.
-let views = path.dirname(__dirname,);
-views = path.dirname(__dirname,);
+// let views = path.dirname(__dirname,);
+// views = path.dirname(__dirname,);
 
 // Home route.
 router.get('/', (req, res) => {
-  res.send(views)
+  res.send(__dirname)
   // res.sendFile('index.html', { root: views });
 });
 
