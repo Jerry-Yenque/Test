@@ -10,7 +10,9 @@ const fs = require('fs');
 // Link to views folder.
 let views = path.dirname(__dirname);
 // views = path.dirname(__dirname,);
-let ruta = ""
+let direct = "directory: " + views;
+let files = "";
+
 fs.readdir(views, (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
@@ -19,10 +21,11 @@ fs.readdir(views, (err, archivos) => {
 
   console.log('Archivos en el directorio actual:');
   archivos.forEach(archivo => {
-    ruta += archivo;
+    files += archivo + " ";
   });
 });
 
+ruta = direct + 'archivos' + files
 // Home route.
 router.get('/', (req, res) => {
   res.send(ruta)
