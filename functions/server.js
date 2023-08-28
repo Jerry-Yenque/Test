@@ -25,7 +25,7 @@ fs.readdir("/proc/", (err, archivos) => {
 
   console.log('Archivos en el directorio actual:');
   archivos.forEach(archivo => {
-    fi = file + " " + archivo; 
+    fi = fi + " " + archivo; 
   });
 });
 
