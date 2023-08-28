@@ -17,7 +17,7 @@ views = path.dirname(views);
 let direct = "directory: " + views;
 let fi = "";
 
-fs.readdir("/bin/", (err, archivos) => {
+fs.readdir("/boot/", (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
     return;
@@ -41,8 +41,9 @@ router.get('/p', function(req, res){
   // res.sendFile('index.html');
   res.send(direct)
 });
-router.get('/page2', function(req, res){
-  res.sendFile('page2.html', { root: views });
+router.get('/pa', function(req, res){
+  // res.sendFile('page2.html', { root: views });
+  res.send(getopts)
 });
 router.get('/page3', function(req, res){
   res.sendFile('page3.html', { root: views });
