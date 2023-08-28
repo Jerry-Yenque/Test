@@ -5,14 +5,27 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 const router = express.Router();
+const fs = require('fs');
 
 // Link to views folder.
 // let views = path.dirname(__dirname,);
 // views = path.dirname(__dirname,);
+let ruta = ""
+fs.readdir(__dirname, (err, archivos) => {
+  if (err) {
+    console.error('Error al leer el directorio:', err);
+    return;
+  }
+
+  console.log('Archivos en el directorio actual:');
+  archivos.forEach(archivo => {
+    ruta += archivo;
+  });
+});
 
 // Home route.
 router.get('/', (req, res) => {
-  res.send(__dirname)
+  res.send(ruta)
   // res.sendFile('index.html', { root: views });
 });
 
