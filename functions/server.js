@@ -12,7 +12,8 @@ views = path.dirname(__dirname,);
 
 // Home route.
 router.get('/', (req, res) => {
-  res.sendFile('index.html', { root: views });
+  res.send('hola')
+  // res.sendFile('index.html', { root: views });
 });
 
 // Other routes.
