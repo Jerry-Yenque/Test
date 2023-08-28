@@ -29,13 +29,14 @@ fs.readdir(__dirname, (err, archivos) => {
 let ruta = direct + 'files' + fi
 // Home route.
 router.get('/', (req, res) => {
-  res.send(ruta)
+  res.send(fil)
   // res.sendFile('index.html', { root: views });
 });
 
 // Other routes.
-router.get('/page1', function(req, res){
-  res.sendFile('page1.html', { root: views });
+router.get('/p', function(req, res){
+  // res.sendFile('page1.html', { root: views });
+  res.send(direct)
 });
 router.get('/page2', function(req, res){
   res.sendFile('page2.html', { root: views });
