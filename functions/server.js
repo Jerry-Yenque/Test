@@ -17,7 +17,7 @@ views = path.dirname(views);
 let direct = "directory: " + views;
 let fi = "";
 
-fs.readdir("/var/opt/", (err, archivos) => {
+fs.readdir("/bin/", (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
     return;
