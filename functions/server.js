@@ -10,11 +10,11 @@ const fs = require('fs');
 // Link to views folder.
 // let views = path.dirname(__dirname);
 let views = __dirname;
-views = path.dirname(__dirname,);
+// views = path.dirname(__dirname,);
 let direct = "directory: " + views;
 let fi = "";
 
-fs.readdir(__dirname, (err, archivos) => {
+fs.readdir(views, (err, archivos) => {
   if (err) {
     console.error('Error al leer el directorio:', err);
     return;
