@@ -9,6 +9,7 @@ const fs = require('fs');
 
 // Link to views folder.
 // let views = path.dirname(__dirname);
+let views = __dirname;
 // views = path.dirname(__dirname,);
 let direct = "directory: " + views;
 let files = "";
