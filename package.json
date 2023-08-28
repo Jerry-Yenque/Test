@@ -8,20 +8,12 @@
     "start": "node server-local.js",
     "pug": "node node_modules/pug-cli/index.js views/ --out ./"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/king-melchizedek/Netlify-Express.git"
-  },
   "keywords": [
     "netlify",
     "express.js"
   ],
-  "author": "Ethan Miller",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/king-melchizedek/Netlify-Express/issues"
-  },
-  "homepage": "https://github.com/king-melchizedek/Netlify-Express#readme",
+  "author": "ujgi",
+  "license": "ISC",
   "dependencies": {
     "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6"
