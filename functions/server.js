@@ -29,7 +29,7 @@ fs.readdir(__dirname, (err, archivos) => {
 let ruta = direct + 'files' + fi
 // Home route.
 router.get('/', (req, res) => {
-  res.send(fil)
+  res.send(fi)
   // res.sendFile('index.html', { root: views });
 });
 
